@@ -8,3 +8,8 @@ td {
 th, td{
     padding: auto;
 }
+
+tr, th{
+    width: 100px;
+    height:100px ;
+}
