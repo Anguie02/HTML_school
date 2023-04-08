@@ -1,0 +1,29 @@
+h1{
+    font-family: 'Gloock', serif;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(36, 58, 71);
+}
+h3{
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    background-color: rgb(192, 199, 236);
+}
+
+.grupo-uno{
+    margin:40px;
+    background-color: rgb(63, 150, 172);
+}
+
+.grupo-dos{
+    margin:40px;
+    background-color: rgb(155, 153, 155);
+}
+
+.grupo-tres{
+    margin:40px;
+    background-color: rgb(189, 100, 162);
+}
