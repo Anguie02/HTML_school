@@ -1,3 +1,10 @@
+h1{
+    font-family: 'Gloock', serif;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(36, 58, 71);
+}
+
 .grupo-uno{
     margin:40px;
     background-color: rgb(164, 227, 243);
