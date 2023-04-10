@@ -20,3 +20,6 @@ body{
     justify-content: center;
     min-height: 100vh;
 }
+tr:nth-of-type(3) > th{
+    background-color: rgb(176, 176, 204);
+}
