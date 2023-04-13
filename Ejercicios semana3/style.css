@@ -1,0 +1,21 @@
+body{
+    background-image: url("mundo.jpg");
+}
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding:100px; 
+    
+    
+}
+
+fieldset{
+    background-color: rgb(230, 205, 233);
+    opacity: 10;
+    padding: 100px; ;
+
+    
+}
