@@ -14,12 +14,12 @@ tr, th{
     height:100px ;
 }
 
-body{
+div{
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
 }
-tr:nth-of-type(3) > th{
-    background-color: rgb(176, 176, 204);
-}
+ h1{
+    text-align: center;
+ }
