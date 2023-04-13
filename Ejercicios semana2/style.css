@@ -23,3 +23,30 @@ div{
  h1{
     text-align: center;
  }
+ /* AÑADIR COLOR*/
+ thead{
+    background-color: rgb(224, 34, 123);
+    color: white;
+ }
+ /* Para todo th que este dentro de tbody */
+ tbody th:first-child{  /*  Toda la primera columna*/
+    background-color: rgb(122, 122, 119);
+ }
+
+ /*tbody tr:nth-child(3){
+    background-color: brown;
+  Para dar color a la quinta fila}*/
+.dia{
+    background-color: rgb(238, 167, 108);
+}
+/* Dar color a una columna especifica */
+ tbody th:nth-child(4){
+    background-color: rgb(123, 194, 132);
+ }
+ tbody th:nth-child(6){
+    background-color: rgb(43, 226, 171);
+ }
+/* Color de fondo */
+ body{
+    background-color: rgb(140, 173, 173);
+ }
