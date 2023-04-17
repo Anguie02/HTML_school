@@ -1,0 +1,217 @@
+/* Usamos una seudoclase rut */
+:root{
+    /* Almacenamos valores semánticos */
+    --green:  hsl(162, 45%, 56%);
+    --plomo: hsl(162, 2%, 56%);
+    --blue: hsl(220, 85%, 57%);
+    --violet: hsl(272, 92%, 32%);
+    --text-whit: hsl(0, 0%, 100%);
+    --text-light-gray: hsl(0,0%, 90%);
+    --body-bg-ccolor: hsl(200,54%, 12%);
+    --glass-bg-color: hsl(0, 0%, 100%, 0.05);
+    --border-color: hsl(0, 0%, 100%, 0.25);
+    --blur: blur(10px);/*Desenfoque gauseano para un elemento*/
+    --button-hover-color: hsl(0,0%,0%, 0.3);/*Cambiar el color del boton cuando se pase el cursor por encima*/
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+body{
+    background-color: var(--body-bg-ccolor);
+    color: var(--text-whit);
+    font-family: 'Courier New', Courier, monospace ;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.5;
+    overflow: hidden;
+}
+/* Apariencia degradada a body */
+body::after,
+body::before{
+    content: '';
+    position: fixed;
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(150px);/*Para dar un desenfoque*/
+    opacity: 0.5;
+
+}
+
+body::before{
+    background-color: var(--blue);
+    left: 0;
+    bottom: 0;
+    transform: translate(-50%);
+}
+
+body::after{
+    background-color: var(--violet);
+    right: 0;
+    top: 0;
+    transform: translate(50%);
+
+}
+
+/* Estilos para los enlaces */
+a{
+    text-decoration: none;/*Quitar el subrayado*/
+    font-weight: 500;
+    display: inline-block;
+}
+
+.gradiend-text{
+
+    background: linear-gradient(to right, var(--green), var(--plomo)) ;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+/* -------------------------------------------- */
+
+.form-main{  /*Estilo para el contenedor genetal*/
+    min-height: 100vh;
+    padding: 60px 15px;
+    display: flex; /*Ubicacion del formulario*/
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+.form-content{
+    width: 100%;
+    max-width: 450px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.form-content .circle-3,
+.form-content .circle-2,
+.form-content .circle-1{
+    position: absolute;
+    background: linear-gradient(to right, var(--blue), var(--violet));
+    border-radius: 50%;
+    z-index: -1;
+}
+.form-content .circle-1{
+    height: 120px;
+    width: 120px;
+    left: 0;
+    top: 10%;
+    transform: translateX(-50%);
+}
+
+
+
+/* Editar el contenedor */
+
+.form-content .box{
+    border-color: var(--glass-bg-color) ;
+    border: 1px solid var(--border-color);
+    padding: 40px 50px;
+    border-radius: 20px;
+    backdrop-filter: var(--blur) ;/*Dar efecto borroso*/
+}
+.form-content h3{
+    font-size: 28px;
+    text-align: center;
+    line-height: 1.2;
+    color: var(--text-whit);
+    font-weight: 500;
+}
+
+.form-content form{
+    margin: 25px 0 20px;
+
+}
+.form-content .input-box{
+    margin-bottom: 25px;
+
+}
+/* Texto dentro de las cajas */
+.form-content ::placeholder{/*Seudoelemento placeholder*/
+    color: violet;
+    opacity: 1;
+}
+/* Estilo para las cajas */
+.form-content .input-control{
+    display: block;
+    height: 45px;
+    width: 100%;
+    background-color: transparent;/*Color-fondo transparente*/
+    border: none;/*Borde de las cajas*/
+    border-bottom: 1px solid var(--border-color);/*Borde inferior*/
+    color: inherit;/*Tomara las caracteristicas de su elemento padre(Pienso que de body)*/
+    font-weight: inherit;
+    font-family: inherit;
+    font-size: 16px;/*Tamaño del texto*/
+
+}
+.form-content .input-control:focus{/*Seudoclase FOCUS(Los bordes que se generan al hacer click en las cajas)*/
+    outline: none;/*Se quitan  el efecto de bordes*/
+}
+/* Editar el link */
+.form-content .input-link{
+    margin-top: 10px;
+    text-align: right;
+}
+/*Editar el boton*/
+.form-content .btn{
+    height: 45px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;/*Mientras más es el valor, la fuente se hace más en negrita*/
+    text-transform: capitalize;/*Forzar a que la primera letra sea MAYUSCULA*/
+    font-family: inherit;
+    cursor: pointer;/*Para que aparesca el cursor de la manito*/
+    border-radius: 25px;
+    user-select: none;
+    background: linear-gradient( to right, var(--plomo), var(--green));
+    border: none;
+    color: var(--text-whit);/*Color del texto*/
+    position: relative;
+    z-index: 1;/*Para que funcione la TRANCICION*/
+    overflow: hidden;
+
+}
+/* --------------------Trancición -------------- */
+.form-content .btn::before{  /*Seudoelemto before*/
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: background-color 0.5s ease;
+    z-index: -1;
+}
+.form-content .btn:hover::before{
+    background-color: var(--button-hover-color);
+}
+.form-content P{
+    text-align: center;
+}
+
+/* RESPONSIVE */
+
+@media(max-width: 575px){
+    /* Hacer que el body se adapte a estos cambios */
+    body::after,
+    body::before{
+    height: 250px;
+    width: 250px;
+    filter: blur(100px);
+
+    }
+    .form-content .bo{
+        padding: 30px;
+    }
+    .form-content h3{
+        font-size: 24px;
+    }
+
+}
