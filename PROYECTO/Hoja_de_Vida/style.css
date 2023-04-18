@@ -1,0 +1,19 @@
+/* Barra de navegación */
+.navbar{
+padding: 2rem;
+background-color: rgb(97, 95, 128);
+}
+
+.navbar-collapse{/*los elementos a la izquierda*/
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* Adaptable-responsivo*/
+@media screen and (max-width: 776px){
+  .navbar-brand{
+    display: none;
+  }  
+  /* no funciona en este caso */
+}
