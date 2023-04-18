@@ -10,6 +10,14 @@ background-color: rgb(97, 95, 128);
 }
 
 
+/* Seccion principal */
+.hero{
+  background-color: beige;
+  min-height: 450px;
+  text-align: center;
+}
+
+
 /* Adaptable-responsivo*/
 @media screen and (max-width: 776px){
   .navbar-brand{
