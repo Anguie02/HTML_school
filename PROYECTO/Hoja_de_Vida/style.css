@@ -33,6 +33,13 @@ h1{
   padding: 3rem;
 }
 
+.hero-imagen-desarrollador{
+  width: 200px;
+  height: 200px;
+  border-radius: 25% 0%;
+  margin: 20px;
+}
+
 
 /* Adaptable-responsivo*/
 @media screen and (max-width: 776px){
