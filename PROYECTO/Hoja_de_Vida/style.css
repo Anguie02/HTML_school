@@ -99,7 +99,10 @@ h1{
   font-size: 25px;
   font-weight: bold;
   margin: 10px 0;
-  
+}
+
+.badge{
+  margin: 5px;
 }
 /* Adaptable-responsivo*/
 @media screen and (max-width: 776px){
