@@ -51,6 +51,17 @@ h1{
   color:rgb(66, 66, 70)
 }
 
+/* Sobre mi */
+.sobre-mi{
+  height: 500px;
+  padding: 10px;
+}
+
+.sobre-mi .contenedor{
+  max-width: 600px;
+  text-align: center;
+}
+
 
 /* Adaptable-responsivo*/
 @media screen and (max-width: 776px){
