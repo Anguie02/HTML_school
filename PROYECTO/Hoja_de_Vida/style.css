@@ -24,6 +24,11 @@ h1{
   
 
 }
+
+.seccion-oscura{
+  color: white;
+  background-color: rgb(106, 99, 131);
+}
 /* Seccion principal */
 .hero{
   background-color: beige;
