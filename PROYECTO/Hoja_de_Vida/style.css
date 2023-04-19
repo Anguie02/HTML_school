@@ -30,6 +30,11 @@ h1{
   background-color: rgb(106, 99, 131);
 }
 
+.seccion-clara{
+  color: black;
+  background-color: beige;
+}
+
 .seccion-titulo{
   font-size: 2rem;
   padding: 15px 0;
@@ -74,7 +79,7 @@ h1{
 
 /* formación academica */
 .academica{
-  padding: 40px;
+  padding: 40px;/**/
 }
 
 /* Adaptable-responsivo*/
