@@ -81,7 +81,11 @@ h1{
 .Experiencia{
   padding: 40px;/**/
 }
-
+.academica-titulo{
+  font-size: 25px;
+  font-weight: bold;/*Peso de la letra*/
+  margin: 10px 0;
+}
 /* Adaptable-responsivo*/
 @media screen and (max-width: 776px){
   .navbar-brand{
