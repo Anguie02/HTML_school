@@ -29,6 +29,16 @@ h1{
   color: white;
   background-color: rgb(106, 99, 131);
 }
+
+.seccion-titulo{
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: 'Philosopher', sans-serif;
+}
+
+.seccion-texto{
+  font-size: 1.2rem;
+}
 /* Seccion principal */
 .hero{
   background-color: beige;
