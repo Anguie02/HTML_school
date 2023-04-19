@@ -72,6 +72,10 @@ h1{
   text-align: center;
 }
 
+/* formación academica */
+.academica{
+  padding: 40px;
+}
 
 /* Adaptable-responsivo*/
 @media screen and (max-width: 776px){
