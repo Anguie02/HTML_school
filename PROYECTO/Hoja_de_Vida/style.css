@@ -119,6 +119,13 @@ background-color: rgb(106, 99, 131);
 .badge{
   margin: 5px;
 }
+
+/* Seccion Proyectos */
+.proyectos{
+  height: 350px;
+  padding: 10px;
+}
+
 /* Adaptable-responsivo*/
 @media screen and (max-width: 776px){
   .navbar-brand{
