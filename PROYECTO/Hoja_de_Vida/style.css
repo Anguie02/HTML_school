@@ -122,10 +122,15 @@ background-color: rgb(106, 99, 131);
 
 /* Seccion Proyectos */
 .proyectos{
-  height: 350px;
-  padding: 10px;
+  /* height: 350px; */
+  padding: 40px 40px 60px 40px;
+  
 }
 
+.proyecto-color{
+  color: black;
+  background-color: beige;
+}
 .img-project{
   height: 300px;
   width: 500px;
