@@ -135,6 +135,22 @@ background-color: rgb(106, 99, 131);
   height: 300px;
   width: 500px;
   margin: 20px;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+.proyectos:hover  img{
+  opacity: 0.2;
+
+}
+
+
+.titulo-proyectos{
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: 'Philosopher', sans-serif;
+  font-weight: bold;
+
 }
 
 /* Adaptable-responsivo*/
