@@ -126,6 +126,12 @@ background-color: rgb(106, 99, 131);
   padding: 10px;
 }
 
+.img-project{
+  height: 300px;
+  width: 500px;
+  margin: 20px;
+}
+
 /* Adaptable-responsivo*/
 @media screen and (max-width: 776px){
   .navbar-brand{
