@@ -139,6 +139,29 @@ background-color: rgb(106, 99, 131);
   height: 300px;
   width: 500px;
   margin: 20px;
+  transition: all 0.2s ease;
+
+}
+/* Falta editar */
+.overlay{
+  transition: all 0.2s ease;
+  opacity: 2;
+  position:absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay p{
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.carousel-inner:hover img{
+  opacity: 0.2;
+}
+.carousel-inner:hover .overlay{
+  opacity: 1;
 }
 
 
