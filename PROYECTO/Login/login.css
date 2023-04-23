@@ -28,3 +28,10 @@ h2{
     color: #fff;
     text-align: center;
 }
+
+.input-caja{
+    width: 310px;
+    margin: 30px;
+    border-bottom: 2px solid black;
+    
+}
