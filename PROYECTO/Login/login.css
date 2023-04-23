@@ -56,3 +56,12 @@ h2{
     font-size: 1em;
     color: #fff;
 }
+
+.input-caja .icono{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 57px;
+
+}
