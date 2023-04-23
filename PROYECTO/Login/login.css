@@ -79,3 +79,14 @@ h2{
     display: flex;
     justify-content: space-between;
 }
+
+
+.recordar-contraseña label input{
+    margin-right: 3px;
+}
+
+.recordar-contraseña a{
+    color: #fff;
+    text-decoration: none;
+}
+
