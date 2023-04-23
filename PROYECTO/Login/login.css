@@ -4,13 +4,19 @@
     box-sizing: border-box;
 }
 
-body{
+
+/* section */
+section{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    background: black;
+    width: 100%;
+    height: 100vh;
+    /* background: url(''); */
 }
+
+
+
 /* contenedor general */
 .login-caja{
     position: relative;
