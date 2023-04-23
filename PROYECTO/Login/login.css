@@ -11,3 +11,14 @@ body{
     min-height: 100vh;
     background: black;
 }
+/* contenedor general */
+.login-caja{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: gray;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
