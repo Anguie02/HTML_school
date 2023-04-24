@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* section */
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: url('gg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* animation: animateBg 5s linear infinite; */
+}
+/* Animacion de fondo */
+@keyframes animateBg {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+    
+}
+
+
+/* contenedor general */
+.login-caja{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255,255,255, .5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(15px); /*Fondo borroso*/
+}
+
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+.input-caja{
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+    border-bottom: 2px solid black;
+    
+}
+
+.preferencias-caja{
+    position: relative;
+    width: 310px;
+    margin: 30px 0;
+}
+
+.input-caja label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #fff;
+    pointer-events: none ;
+}
+
+.input-caja input:focus~label,
+.input-caja input:valid~label{
+    top: -5px;
+}
+
+
+.input-caja input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #fff;
+    padding: 0 35px 0 5px ;
+}
+
+.input-caja .icono{
+    position: absolute;
+    right: 8px;
+    color: #fff;
+    font-size: 1.2em;
+    line-height: 57px;
+}
+
+
+button{
+    width: 100%;
+    height: 40px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: black;
+    font-weight: 500;
+}
+
+
+
+/* Responsive */
+@media(max-width: 360px){
+    .login-caja{
+        width:100% ;
+        height: 100vh;
+        border: none;
+        border-radius: 0;
+    
+    }
+
+    .login-caja{
+        width: 290px;
+    }
+}
