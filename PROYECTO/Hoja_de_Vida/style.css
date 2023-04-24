@@ -173,6 +173,40 @@ background-color: rgb(106, 99, 131);
 
 }
 
+/* seccion contacto */
+.contacto{
+  padding: 40px 40px 60px 40px;/**/
+}
+
+.contacto-color{
+  color: white;
+  background-color: rgb(106, 99, 131);
+}
+
+
+.contacto i{
+  font-size: 2.5rem;
+  color: #fff;
+  background-color: rgb(30, 25, 59);
+  padding: 8px 19px;
+  border-radius: 50%;
+}
+
+.titulo-contacto {
+  font-size: 2rem;
+  padding: 15px 0;
+  font-family: 'Philosopher', sans-serif;
+  font-weight: bold;
+}
+/* Editar los botones */
+.btn{
+  background-color: transparent;
+  border: 1px solid #fff;
+
+}
+
+
+
 /* Adaptable-responsivo*/
 @media screen and (max-width: 776px){
   .navbar-brand{
